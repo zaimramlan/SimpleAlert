@@ -153,7 +153,7 @@ open class AlertController: UIViewController {
         }
         
         if preferredStyle == .actionSheet {
-            containerViewBottomSpaceConstraint.priority = UILayoutPriority(rawValue: ConstraintPriorityRequired)
+            containerViewBottomSpaceConstraint.priority = UILayoutPriority(ConstraintPriorityRequired)
             backgroundView.touchHandler = { [weak self] view in
                 self?.dismiss()
             }
