@@ -29,18 +29,11 @@ Can be used as `UIAlertController`, it supports from iOS7.
 Add the following to your `Podfile`:
 
 ```Ruby
-pod "SimpleAlert"
+pod "SimpleAlert", :git => 'https://github.com/zaimramlan/SimpleAlert.git'
 use_frameworks!
 ```
 Note: the `use_frameworks!` is required for pods made in Swift.
 
-#### Carthage
-
-Add the following to your `Cartfile`:
-
-```Ruby
-github "KyoheiG3/SimpleAlert"
-```
 ### iOS 7
 
 Just add everything in the source file to your project.
@@ -287,6 +280,11 @@ var configContentView: ((UIView!) -> Void)?
 
 * Can add a cancel button any number of the `ActionSheet`.
 * If tap the outside of the view, the action handler will not be executed of the `ActionSheet`.
+
+## The difference between this version and Kyohei's version
+
+- Top and bottom constraints for the title, message and textview are now made optional.
+- This is to allow further customisation and prevent constraint error messages in the XCode logs.
 
 ## LICENSE
 
