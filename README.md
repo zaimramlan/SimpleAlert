@@ -27,15 +27,7 @@ Can be used as `UIAlertController`.
 Add the following to your `Podfile`:
 
 ```Ruby
-pod "SimpleAlert"
-```
-
-#### Carthage
-
-Add the following to your `Cartfile`:
-
-```Ruby
-github "KyoheiG3/SimpleAlert"
+pod "SimpleAlert", :git => 'https://github.com/zaimramlan/SimpleAlert.git'
 ```
 
 ## Usage
@@ -260,7 +252,12 @@ func configureContentView(_ contentView: SimpleAlert.AlertContentView)
 - Can add a cancel button any number of the `actionSheet`.
 - If tap the outside of the view, the action handler will not be executed of the `actionSheet`.
 
-## Author
+## The difference between this version and Kyohei's version
+
+- Top and bottom constraints for the title, message and textview are now made optional.
+- This is to allow further customisation and prevent constraint error messages in the XCode logs.
+
+## Original Author
 
 #### Kyohei Ito
 
