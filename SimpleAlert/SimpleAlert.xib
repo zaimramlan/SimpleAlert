@@ -158,7 +158,7 @@
                             <rect key="frame" x="0.0" y="62" width="220" height="0.0"/>
                             <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" id="5g5-Eq-OMM"/>
+                                <constraint firstAttribute="height" priority="750" id="5g5-Eq-OMM"/>
                             </constraints>
                         </view>
                     </subviews>
